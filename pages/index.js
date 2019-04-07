@@ -1,32 +1,20 @@
 import React from 'react'
-import Link from 'next/link'
-import Head from '../components/head'
-import Nav from '../components/nav'
+
+import './index.scss';
+import Cover from '../components/cover';
+import About from '../components/about';
+import Portfolio from '../components/portfolio';
+import Experiences from '../components/experiences';
+import Contact from '../components/contact';
 
 const Home = () => (
-  <div>
-    <Head title="Home" />
-    <div className="hero">
-      <h1 className="title">Welcome to My Site</h1>
-      <p className="description">
-        Juan David Gómez - Frontend Developer
-      </p>
-    </div>
-
-    <style jsx>{`
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .title,
-      .description {
-        text-align: center;
-      }
-    `}</style>
-  </div>
+  <React.Fragment>
+    <Cover />
+    <About />
+    <Portfolio />
+    <Experiences />
+    <Contact />
+  </React.Fragment>
 )
 
 export default Home

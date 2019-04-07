@@ -1,0 +1,8 @@
+@import '../common/util';
+
+.about {
+    @extend %diagonal_section;
+    height: 100%;
+    background: $bg-primary-color;
+    text-align: center;
+}

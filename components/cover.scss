@@ -1,0 +1,15 @@
+@import '../common/util';
+
+.cover {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 48px;
+        text-shadow: 0 0 10px #000, 0 0 20px;
+    }
+}
