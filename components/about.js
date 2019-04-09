@@ -107,7 +107,7 @@ function About() {
     <div className="about">
       <h2>About</h2>
       <p>
-        I live in Medellín Colombia and I have 4+ year as Web Developer, recently,
+        I live in Medellín Colombia and I have 5+ year as Web Developer, recently,
         I have worked with JavaScript and mostly with Front-end technologies in small and large projects.
       </p>
       <p> I have knowledge and experience working with :</p>
