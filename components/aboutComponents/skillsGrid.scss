@@ -1,0 +1,24 @@
+.skills-grid {
+    text-align: left;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        flex-wrap: nowrap;
+        overflow: auto;
+        padding: 0;
+
+        li {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-height: 100px;
+            }
+        }
+    }
+}
