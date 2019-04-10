@@ -1,6 +1,6 @@
 @import '../common/util';
 
 .portfolio {
-    height: 100%;
+    @extend %normal_section;
     text-align: center;
 }

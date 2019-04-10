@@ -4,32 +4,40 @@ $txt-color: #fff;
 $bg-primary-color: rgba($primary-color, 0.5);
 
 @mixin breakpoint($class) {
-    @if $class == xs {
-      @media (max-width: 767px) { @content; }
-    }
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
 
-    @else if $class == sm {
-      @media (min-width: 768px) { @content; }
-    }
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
 
-    @else if $class == md {
-      @media (min-width: 992px) { @content; }
-    }
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
 
-    @else if $class == lg {
-      @media (min-width: 1200px) { @content; }
-    }
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
 
-    @else {
-      @warn "Breakpoint mixin supports: xs, sm, md, lg";
-    }
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
 }
 
 %diagonal_section {
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-    padding: 120px 10px;
-    @include breakpoint(sm) {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  padding: 120px 10px;
+  @include breakpoint(sm) {
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+}
+
+%normal_section {
+  padding: 10px;
+  @include breakpoint(sm) {
+      padding-left: 50px;
+      padding-right: 50px;
+  }
 }
