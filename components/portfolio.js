@@ -10,7 +10,7 @@ const Portfolio = () => {
       image: '/static/projects/juandastic.png',
       description: 'This Static landing page is created to share the projects and knowledge from a developer.',
       details: 'This was built on NextJS and ReactJS, it is running on a Docker container inside a DigitalOcean server with Traefik as Reverse Proxy.',
-      projectLink: 'http://juandastic.co',
+      projectLink: '',
       codeLink: 'https://github.com/juandastic/juandasticco',
       tags: [
         'NextJS',

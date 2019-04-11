@@ -2,6 +2,17 @@ $primary-color: #81bcd7;
 $bg-color: #000000;
 $txt-color: #fff;
 $bg-primary-color: rgba($primary-color, 0.5);
+$prefixes: "webkit", "moz", "ms", "o", "none";
+
+@mixin prefix($property, $arguments) {
+ @each $prefix in $prefixes {
+   @if $prefix == "none" {
+     #{$property}: $arguments;
+   } @else {
+     -#{$prefix}-#{$property}: $arguments;
+   }
+ }
+}
 
 @mixin breakpoint($class) {
   @if $class == xs {
