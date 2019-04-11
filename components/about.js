@@ -81,7 +81,7 @@ function About() {
         logo: '/static/img/docker.png'
       },
       {
-        name: 'Traefic',
+        name: 'Traefik',
         logo: '/static/img/traefik.png'
       },
       {
