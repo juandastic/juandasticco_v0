@@ -14,7 +14,7 @@ const PositionsTimeline = ({positions}) => {
           <h4>{item.title}</h4>
           {item.projects.map((project, projectIndex)=>(
             <div key={projectIndex} className="projectItem">
-              <h4>{project.title} :</h4>
+              <h4>{project.title}:</h4>
               <p>{project.description}</p>
             </div>
           ))}

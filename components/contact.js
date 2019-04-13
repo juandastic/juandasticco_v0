@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <h2>Get in Touch</h2>
-      <p> I am always willing to hear how can I help and I am always ready to face new challenges </p>
+      <p> I am always willing to hear how can I help and, I am always ready to face new challenges </p>
       <ul className="info">
         <li>
           <a className="info-link" href="mailto:juandastic@gmail.com" target="__blank">
