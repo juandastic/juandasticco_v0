@@ -10,13 +10,14 @@
     "container:server": "docker-compose -f docker-compose.yml -f docker-compose.juandastic.yml up -d"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-brands-svg-icons": "^5.8.1",
+    "@fortawesome/free-solid-svg-icons": "5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@zeit/next-sass": "^1.0.1",
     "next": "8.0.4",
     "node-sass": "^4.11.0",
     "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "@fortawesome/fontawesome-svg-core": "^1.2.15",
-    "@fortawesome/free-solid-svg-icons": "^5.7.2",
-    "@fortawesome/react-fontawesome": "^0.1.4"
+    "react-dom": "16.8.6"
   }
 }

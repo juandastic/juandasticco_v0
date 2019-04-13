@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTag, faExternalLinkAlt, faCode } from '@fortawesome/free-solid-svg-icons'
+import { faTag, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import './projectCard.scss';
 
@@ -14,8 +15,8 @@ const ProjectCard = ({name, image, description, details,
     setFlippedCard(!flippedCard);
   };
 
-  const projectTags = tags.map((tag) => {
-    return (<span className="tag">{tag}</span>);
+  const projectTags = tags.map((tag, index) => {
+    return (<span key={index} className="tag">{tag}</span>);
   })
   const cardClasses = ['project-card'];
 
@@ -48,7 +49,7 @@ const ProjectCard = ({name, image, description, details,
                   {
                       codeLink &&
                       <a className="action-link" href={codeLink} target="_blank">
-                        <FontAwesomeIcon icon={faCode} />
+                        <FontAwesomeIcon icon={faGithub} />
                       </a>
                   }
                 </div>

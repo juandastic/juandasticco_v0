@@ -4,9 +4,9 @@ import './projectsGrid.scss';
 import ProjectCard from './projectCard';
 
 const ProjectsGrid = ({projects}) => {
-  const list = Object.keys(projects).map((key) => {
+  const list = Object.keys(projects).map((key, index) => {
     return (
-      <ProjectCard {...projects[key]} />
+      <ProjectCard key={index} {...projects[key]} />
     );
   });
   return (

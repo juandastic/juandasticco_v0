@@ -3,15 +3,15 @@ import React from 'react'
 import './skillsGrid.scss';
 
 const SkillsGrid = ({ skills }) => {
-  const list = Object.keys(skills).map((key, index) => {
-    const items = skills[key].map((item)=>(
-      <li>
+  const list = Object.keys(skills).map((key, categoryIndex) => {
+    const items = skills[key].map((item, skillIndex)=>(
+      <li key={skillIndex}>
         {item.logo && <img src={item.logo} />}
         {item.name}
       </li>
     ))
     return (
-      <div>
+      <div key={categoryIndex}>
         <h3>{key}</h3>
         <ul>
           {items}
