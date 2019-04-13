@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './PositionsTimeline.scss';
+import './positionsTimeline.scss';
 
 const PositionsTimeline = ({positions}) => {
   const items = positions.map((item, itemIndex) => {
