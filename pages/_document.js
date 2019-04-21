@@ -27,6 +27,24 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta name="google-site-verification" content="VtzMwHjX11woX_gf2hqlJfiaok5ao9IZihqNqm9qNqM" />
+          <meta property="og:title" content="Juan David Gomez" />
+          <meta name="author" content="Juan David Gomez" />
+          <meta property="og:locale" content="en_US" />
+          <meta name="description" content="Front-end Developer that creates Modern and Helpful Web Applications" />
+          <meta property="og:description" content="Front-end Developer" />
+          <link rel="canonical" href="https://juandastic.co/" />
+          <meta property="og:url" content="https://juandastic.co/" />
+          <meta property="og:site_name" content="Juan David Gomez" />
+          <meta property="og:image" content="https://juandastic.co/static/projects/juandastic.png" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content="" />
+          <meta name="twitter:creator" content="@juandastic" />
+          <meta name="twitter:title" content="Juan David Gomez" />
+          <meta name="twitter:description" content="Front-end Developer. I create Modern and Helpful Web Applications" />
+          <meta name="twitter:image" content="https://juandastic.co/static/projects/juandastic.png" />
+          <meta name="twitter:image:alt" content="Juan David Gomez" />
+           <title>Juan David Gómez | Front-end Developer</title>
         </Head>
         <body>
           <Main />
