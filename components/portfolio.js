@@ -5,6 +5,22 @@ import ProjectsGrid from './portfolioComponents/projectsGrid';
 
 const Portfolio = () => {
   const projects = {
+    'rps-game': {
+      name: 'Rock Paper Scissor Game',
+      image: '/static/projects/rps-game.png',
+      description: 'This is a simple Rock Paper Scissor game where two player play on the same device.',
+      details: 'This was built on MongoDB, NodeJs and ReactJS, it is running on a Docker container inside a DigitalOcean server with Traefik as Reverse Proxy.',
+      projectLink: 'https://rps-game.juandastic.co',
+      codeLink: 'https://github.com/juandastic/rps-game',
+      tags: [
+        'ReactJS',
+        'HTML & CSS',
+        'NodeJS',
+        'MongoDB',
+        'Docker',
+        'Traefik'
+      ]
+    },
     'Juandastic': {
       name: 'Juandastic',
       image: '/static/projects/juandastic.png',
@@ -31,6 +47,7 @@ const Portfolio = () => {
       tags: [
         'ReactJS',
         'HTML & CSS',
+        'NodeJS',
         'MongoDB',
         'Docker',
         'Traefik'
