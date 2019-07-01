@@ -6,8 +6,19 @@ import PositionsTimeline from './experiencesComponents/positionsTimeline';
 const Experiences = () => {
   const positions = [
     {
-      order: 0,
-      date: '2017 - Current',
+      order: 3,
+      date: '2019 - Current',
+      title: 'La Haus',
+      projects: [
+        {
+          title: 'lahaus.com',
+          description: 'Product improvements to make La Haus the biggest real estate market place of LATAM'
+        }
+      ]
+    },
+    {
+      order: 2,
+      date: '2017 - 2019',
       title: 'Globant',
       projects: [
         {
@@ -32,7 +43,7 @@ const Experiences = () => {
       ]
     },
     {
-      order: 2,
+      order: 0,
       date: '2014 - 2016',
       title: 'everis',
       projects: [
